@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Background from './bg.png';
+import Background from './bggrey1.png';
 import Chevron from './down-chevron.png';
 import Foto from "./assets/img/habib.jpg";
 import {Header, Button} from "./components";
@@ -50,14 +50,14 @@ class App extends Component {
               <center>
               <img src={Foto} alt="" style={{height: 168, width: 150}}/></center>
           <div style={matches ? styles.h1 : styles.h2}>
-        hello my name is <b>Risti</b> as full-stack developer from <b>arkademy</b>
+        hello my name is <b>NANDA</b> as full-stack developer from <b>arkademy</b>
           </div>
           </div>
           </div>
           </Route>
           <Route path="/">
           <div style={styles.container}>
-            <Header title="Risti"/>
+            <Header title="NANDA"/>
             <div style={matches ? styles.h1 : styles.h2}>
               This Most Simple & Yet <b>Powerful</b> <b>Way</b> To <b>Launch</b> Your Startup
               </div>

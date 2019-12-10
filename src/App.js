@@ -1,86 +1,102 @@
 import React, { Component } from 'react';
-import Background from './bg.png';
-import Foto from './assets/img/bali1.png';
+import Background from './gambar.png';
 import { Button, Button2 } from './components';
+import logo from './call.png'
+import stars from './stars.png'
 class App extends Component {
-    render(){  
-      return(
-          <div style={styles.background}>
-          <div style={styles.overlay}>
-                <div style={styles.container}>
-                    <img src={Foto} alt="" style={{height: 168, width: 150}} />
-                        <div style={styles.h1}>
-                            A Better way to
+  render() {
+    return (
+      <div style={styles.background}>
+        <div style={styles.overlay}>
+          <div style={styles.container}>
+            <div style={styles.h1}>
+              Save your earth
                             <div style={styles.h2}>
-                                Travel to Bali 
+               
                             </div>
-                        </div>  
-                        <div style={styles.subTittle}>
-                            Cheapest and Easyer
-                        </div>
-                        <div style={styles.wrapperInput}> 
-                            <Button2 title="Read More"/>
-                            <Button title="Reservation"/>
-                        </div>
-
-                    </div>
-                </div>
             </div>
-      );
-    }
+            <div style={styles.subTittle}>
+              Menanam satu pohon,menghasilkan sejuta manfaat 
+                        </div>
+            <div style={styles.wrapperInput}>
+              <img
+             src={stars}
+             style={styles.image}
+              />
+              
+              <Button2 title="Donasi pohon"
+               />
+               <div>
+              <Button title="Hubungi kami" />
+               </div>
+            </div>
+            <img
+            src={logo}
+            style={{
+              marginRight:780,
+              marginTop: -35,
+            }}
+            />
+
+          </div>
+        </div>
+      </div>
+    );
   }
-  
-  let w = window.innerWidth;
-  let h = window.innerHeight;
-  const styles = {
-    background: {
-      display: 'flex',
-      backgroundImage: `url(${Background})`,
-      height: '100%',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right:0,
-      backgoundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-  }, 
+}
+
+let w = window.innerWidth;
+let h = window.innerHeight;
+const styles = {
+  background: {
+    display: 'flex',
+    backgroundImage: `url(${Background})`,
+    height: '100%',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    backgoundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  },
   overlay: {
-     backgroundColor: "rgba(81, 77, 67, 0.7)",
-     height: h,
-     width: '100%'
-  }, 
+    
+    height: h,
+    width: '100%'
+  },
   container: {
-    display:'flex',
-     flexDirection: 'column',
-     alignItems: 'center',
-     fontFamily: 'Pacifico'
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontFamily: 'Pangolin'
   },
   h1: {
-    alignSelf: 'center', 
-    marginTop: 50, 
-    color: 'white', 
-    fontSize: 48, 
+    alignSelf: 'center',
+    marginTop: 250,
+    marginRight: 900,
+    color: 'black',
+    fontSize: 48,
     textAlign: 'center',
     maxWidth: 700
   },
-  h2: { 
-    color: 'orange', 
+  h2: {
+    color: 'orange',
     textAlign: 'center',
-    maxWidth: 700
+    maxWidth: 800,
   },
   wrapperInput: {
     display: 'flex',
-     alignSelf: 'center', 
-     marginTop: 60
+    alignSelf: 'center',
+    marginTop: 50
   },
   subTittle: {
-      color: 'white',
-      fontFamily: "Roboto",
-      marginTop: 20
+    color: 'black',
+    fontFamily: "Roboto",
+    marginTop: 20,
+    marginRight:880,
   },
- }
-  
-  export default App;
-  
-  
+}
+
+export default App;
+
